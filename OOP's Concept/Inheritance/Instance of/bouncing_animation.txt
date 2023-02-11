@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bouncer</title>
+    <style>
+        #loader{
+            margin-left:400px;
+            margin-top:200px ;
+           
+        }
+        #loader span{
+            display: inline-block;
+            background-color: limegreen;
+            height: 80px;
+            width: 30px;
+           
+            margin: 5px;
+            animation-name: power;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-direction:reverse;
+
+        }
+        #loader>span:nth-child(1){
+            animation-delay: 2s;
+            background-color: green;
+        }
+        #loader>span:nth-child(2){
+            animation-delay: 2.2s;
+            background-color:red;
+        }
+        #loader>span:nth-child(3){
+            animation-delay: 2.4s;
+            background-color: cyan;
+        }
+        #loader>span:nth-child(4){
+            animation-delay: 2.6s;
+            background-color: orange;
+        }
+       @keyframes power{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-100px);
+        }
+        100%{
+            transform: translateY(-0px);
+        }
+       } 
+
+
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+    </div>
+</body>
+</html>
