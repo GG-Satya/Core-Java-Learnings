@@ -1,3 +1,2 @@
-# Core-Java-Learnings
 
-=> My old and basic codes that I used to execute at Begining of java learning statge
+# ALL my old java code that I used to practise during my starting days of Java learning.
